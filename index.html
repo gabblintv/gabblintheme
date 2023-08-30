@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gabblin</title>
+    <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+ 
+    <div class="container">
+
+      <!--MENU-->
+      <nav>
+        <ul>
+          <li><ion-icon name="home"></ion-icon><a href="/home" target="_blank">Home</a></li>
+          <li><ion-icon name="person"></ion-icon><a href="/sobre" target="_blank">Sobre</a></li>
+          <li><ion-icon name="storefront"></ion-icon><a href="/loja" target="_blank">Loja</a></li>
+          <li><ion-icon name="mail"></ion-icon><a href="contato" target="_blank">Contato</a></li>
+        </ul>
+      </nav>
+      <!--MENU-->
+
+      <!--FOTO-->
+      <main>
+        <video loop autoplay>
+          <source src="./images/main-vid_VP9.webm" type="video/webm">
+        </video>
+      </main>
+      <!--FOTO-->
+
+      <!--SOCIAIS-->
+      <div id="sociais">
+        <p>Redes Sociais</p>
+        <ul>
+          <li><ion-icon name="logo-twitch"></ion-icon>
+          <a href="https://www.twitch.tv/gabblintv"target="_blank">GabblinTV</a></li>
+          <li>
+          <ion-icon name="logo-twitter"></ion-icon>
+          <a href="https://twitter.com/GabblinTV"target="_blank">GabblinTV</a></li>
+          <li>
+          <ion-icon name="logo-instagram"></ion-icon>
+          <a href="https://www.instagram.com/gabblin"target="_blank">Gabblin</a></li>
+          <li>
+          <ion-icon name="logo-tiktok"></ion-icon>
+          <a href="https://www.tiktok.com/@gabblintv"target="_blank">GabblinTV</a></li>
+        <li>
+          <ion-icon name="logo-youtube"></ion-icon>
+          <a href="https://www.youtube.com/@gabblintv"target="_blank">GabblinTV</a>
+        </li>
+        </ul>
+      </div>
+      <!--SOCIAIS-->
+      
+      <!--DISCORD-->
+      <div id="discord">
+        <a href="#"><img src="./images/DISCORD.png"></a>
+      </div>
+      <!--DISCORD-->
+
+      <!--SOBRE-->
+      <sobre><div id="sobre">
+        <div id="sobre-img"><img src="./images/foto-sobre.png"></div>
+          <p>Gabblin mora em uma grande floresta chamada "aklsalkslkad" junto com seus amigos. Ele é um goblin habilidoso e já viveu várias aventuras.</p>
+        <div id="sobre-button"><a href="#"> Saiba mais</a></div>
+        </div>
+      </sobre>
+      <!--SOBRE-->
+
+      <!--TWITCH-->
+      <div id="twitch">
+        <!-- Add a placeholder for the Twitch embed -->
+            <div id="twitch-embed"></div>
+      </div>
+      <footer>
+        Feito com ♥ pelo <a href="#" target="_blank">Gabblin</a>
+      </footer>
+    </div>
+    <!--TWITCH-->
+      
+    <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+    <!-- Create a Twitch.Player object. This will render within the placeholder div -->
+    <script type="text/javascript">
+      new Twitch.Player("twitch-embed",{
+        channel: "gabblintv"
+        });
+    </script>
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+      
+      <script src="./script.js"></script>
+
+</body>
+</html>
